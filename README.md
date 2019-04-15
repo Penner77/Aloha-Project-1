@@ -4,8 +4,11 @@ A paragraph describing my project.
 
 ## More about stuff
 
-More information
+More information.
 
+### Even more about stuff
+
+With more information than before. 
 
 
 
