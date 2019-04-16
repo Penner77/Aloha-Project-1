@@ -115,14 +115,9 @@ margin: auto;
 
 .about-us-promo {
     background: white;
-    display: flex-block;
     height: 150px;
     width: 700px;
-    max-width: 80%;
     margin: auto;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
     padding: 1rem;
 
 }
@@ -255,18 +250,53 @@ width: 50%;
     width: 100%;
     height: 200px;
     background-image: url(images/wave-bkgd.jpg);
+    background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 25px;
     padding-bottom: 25px;
-    color: white;
+    margin: auto;
 
 }
 
+.signup-form .signup {
+    color: white;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+}
+
+.signup-form .updates {
+    color: white;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+
+}
+
+.h1-newsletter {
+    text-align: center;
+}
+
+.h2-newsletter {
+    max-width: 75%;
+    margin: auto;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+}
 
 .form-box {
     display: flex;
     justify-content: center;
-    padding-top: 25px;
+    padding-top: 5px;
 
 }
 
@@ -276,12 +306,18 @@ width: 50%;
 
 /* START OF FOOTER */
 
+
+
 .footer {
     background-color: black;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
     height: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 li {
@@ -293,7 +329,8 @@ li {
     font-style: normal;
     font-weight: 100;
     color: white;   
-    font-size: .75rem 
+    font-size: .75rem; 
+    padding-top: 20px;
 }
 
 .social-list {
@@ -303,9 +340,14 @@ li {
     font-weight: italic;
     color: white;
     padding: 0;
+    padding-top: 10px;
     font-size: .75rem;
-    width: 75px;
+    width: 100px;
   }
+
+.fab {
+    padding-right: 10px;
+}
 
   .address {
     color: grey;
