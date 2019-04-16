@@ -2,6 +2,7 @@
     border: .5px dashed grey;
 }
 
+
 /* START OF TOP WHITE HEADER SECTION */
 
 .topbanner {
@@ -78,7 +79,7 @@ margin: auto;
     
     background-repeat: no-repeat, no-repeat;
     background-size: contain, cover;
-    background-position: center, center;
+    background-position: center 50px, center;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -122,11 +123,11 @@ margin: auto;
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 
 }
 
-.blurb1 {
+.h1 {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -150,7 +151,7 @@ margin: auto;
     text-align: center;
 }
 
-.blurb2 {
+.h2 {
     color: black;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -175,24 +176,25 @@ margin:auto;
 text-transform: uppercase;
 font-size: 1.5rem;
 color: white;
-max-width: 1240px;;
-
+max-width: 1240px;
 }
 
 
 .categories li {
-    display: inline-flex;
-    flex-flow: wrap;
+    display: flex;
     justify-content: center;
     align-items: center; 
     background-size: cover;  
-    width: 350px;
+    width: 25%;
     height: 200px; 
+    background-position: top;
 }
 
-li {
-    width: 350px;
-    height: 200px;
+.categories :first-child {
+width: 50%;
+}
+.categories :last-child {
+    width: 50%;
 }
 
 .mens {
@@ -244,6 +246,33 @@ li {
 
 /* END OF CATEGORES SECTION */
 
+/* START OF FORM SECTION*/
+
+.signup-form {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url(images/wave-bkgd.jpg);
+    background-position: bottom;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+
+}
+
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+
+}
+
+/* END OF FORM SECTION */
+
+
 
 /* START OF FOOTER */
 
@@ -290,3 +319,48 @@ li {
     a.emaillink:hover { color: white; }
 
 
+/* END OF FOOTER */
+
+
+
+/* MOBILE FIRST CODE */
+/* Media for Phone break-point 480px */
+
+@media screen and (min-width: 480px) {
+   
+
+    .mainlogo {
+    order: 1;
+    }
+    
+    .top-navigation {
+    order: 3;
+    }
+    
+    .shoppingcart {
+    order: 2;
+    }
+    
+    
+    }
+    
+    /* @MEDIA for desktop, breakpoint 720px+ */ 
+    
+    @media screen and (min-width: 720px) {
+    
+    
+        .mainlogo {
+            order: 1;
+        }
+        
+        .top-navigation{
+        order: 2;
+        }
+        
+        .shoppingcart {
+        order: 3;
+        }
+    
+    
+    }
+    

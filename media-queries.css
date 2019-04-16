@@ -1,0 +1,46 @@
+/* Media for Phone break-point 480px -- 
+do this in main CSS and add widths
+- make sure flexwrap is wrap *
+
+
+anything greater than 600 logo list cart */
+
+@media screen and (min-width: 600px) {
+   
+
+.mainlogo {
+order: 1;
+}
+
+.top-navigation{
+order: 3;
+}
+
+.shoppingcart {
+order: 2;
+}
+
+
+}
+
+/* @MEDIA for desktop, breakpoint 900px+ */ 
+
+@media screen and (min-width: 900px) {
+
+
+    .mainlogo {
+        order: 1;
+    }
+    
+    .top-navigation{
+    order: 2;
+    }
+    
+    .shoppingcart {
+    order: 3;
+    }
+
+
+
+
+}
