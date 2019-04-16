@@ -165,19 +165,20 @@ margin: auto;
 /* START OF CATEGORIES SECTION */
 
 
+
 .categories { /*UL the flex CONTAINER*/
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-
 list-style: none;
 padding: 0;
+margin:auto;
 text-transform: uppercase;
 font-size: 1.5rem;
 color: white;
+max-width: 1240px;;
 
 }
+
 
 .categories li {
     display: inline-flex;
@@ -280,3 +281,12 @@ li {
   .address {
     color: grey;
   }
+
+
+    a.emaillink:link { color: white; }
+
+    a.emaillink:visited { color: white; }
+
+    a.emaillink:hover { color: white; }
+
+
