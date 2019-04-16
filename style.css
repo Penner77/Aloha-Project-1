@@ -7,7 +7,7 @@
 
 .topbanner {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center; 
     align-content: center;
@@ -35,8 +35,6 @@ padding-left: 10px;
 width: 50%;
 height: auto;
 margin: auto;
-display: inline-flex;
-flex-wrap: nowrap;
 flex-direction: row;
 text-transform: uppercase;
 justify-content: space-around;
@@ -365,10 +363,15 @@ li {
 
 
 
-/* MOBILE FIRST CODE */
-/* Media for Phone break-point 480px */
+/* MOBILE FIRST CODE - IGNORE UNTIL YOU SET THE SITE AS MOBILE 1ST
 
-@media screen and (min-width: 480px) {
+MOBILE = LESS THAN 600PX (default) | TABLET = 600PX PLUS | DESKTOP = 1240PX AND UP
+.......SO SET UP WEBSITE AS "MOBILE 1ST" AND THEN GO BELOW AND SET IT UP FOR 600-1240 AND 1240+ */
+
+/* Media for Phone break-point 600px and up */
+
+/*
+@media screen and (min-width: 600px) {
    
 
     .mainlogo {
@@ -377,6 +380,8 @@ li {
     
     .top-navigation {
     order: 3;
+    display: flex;
+    flex-wrap: nowrap;
     }
     
     .shoppingcart {
@@ -386,9 +391,9 @@ li {
     
     }
     
-    /* @MEDIA for desktop, breakpoint 720px+ */ 
     
-    @media screen and (min-width: 720px) {
+    
+    @media screen and (min-width: 1240px) {
     
     
         .mainlogo {
@@ -406,3 +411,4 @@ li {
     
     }
     
+*/
