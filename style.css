@@ -7,6 +7,418 @@
 
 .topbanner {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    align-content: center;
+
+}
+
+.mainlogo {
+background-image: url(images/aloha-logo.svg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+width: 20%;
+height: 60px;
+align-items: center;
+align-content: center;
+padding-left: 10px;
+}
+
+.top-navigation  {
+height: auto;
+margin: auto;
+flex-direction: row;
+flex-wrap: nowrap;
+text-transform: uppercase;
+text-align: center;
+order: 3;
+}
+
+.listcontainer {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-items {
+    display: inline;
+    padding: 10px;
+    font-family: PlayfairDisplay, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: red;
+
+}
+
+.shoppingcart  {
+background-image: url(images/cart-icon.svg);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+height: 60px;
+width: 20%;
+
+}
+
+/* END OF TOP WHITE HEADER SECTION */
+
+
+/* START OF FLOWER-BANNER SECTION */
+
+.flower-banner {
+    background-image: url(images/banner-girl.png), 
+    url(images/flower-bkgd.jpg);
+    
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
+    background-position: center 50px, center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-height: 600px;
+    height: 120vh;
+}
+
+.new-collection {
+    text-transform: uppercase;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.spring-summer {
+    text-transform: capitalize;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    max-width: 300px;
+}
+
+/* END OF FLOWER-BANNER SECTION */
+
+
+/* START OF HAND-CRAFTED STYLES SECTION */
+
+.about-us-promo {
+    background: white;
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.hand-crafted {
+    color: black;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.styles {
+    color: black;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.h2 {
+    color: black;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+    word-spacing: 3;
+    line-height: 1.4;
+}
+
+/* END OF HAND-CRAFTED STYLES SECTION */
+
+
+/* START OF CATEGORIES SECTION */
+
+
+
+.categories { /*UL the flex CONTAINER*/
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+margin:auto;
+text-transform: uppercase;
+font-size: 1.5rem;
+color: white;
+}
+
+
+.categories li {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-size: cover;  
+    width: 48%;
+    height: 200px; 
+    background-position: top;
+    margin: 3px;
+}
+
+.categories :first-child {
+    width: 100%;
+    }
+
+.categories :nth-child(2) {
+    width: 48%;
+}
+
+.categories :nth-child(3) {
+    width: 48%;
+}
+
+.categories :nth-child(3) {
+    width: 48%;
+}
+
+.categories :nth-child(4) {
+    width: 48%;
+}
+
+.categories :last-child {
+        width: 100%;
+    }
+
+
+.mens {
+    background-image: url(images/mens-category.jpg);
+    width: 350px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+
+}
+
+.trends {
+    background-image: url(images/trends-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.glasses {
+    background-image: url(images/glasses-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.sale {
+    background-image: url(images/sale-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bags {
+    background-image: url(images/bags-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.womens {
+    background-image: url(images/womens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/* END OF CATEGORES SECTION */
+
+/* START OF FORM SECTION*/
+
+.signup-form {
+    height: 250px;
+    background-image: url(images/wave-bkgd.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 25px;
+    margin: auto;
+
+}
+
+.signup-form .signup {
+    color: white;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+}
+
+.signup-form .updates {
+    color: white;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+
+}
+
+.h1-newsletter {
+    text-align: center;
+}
+
+.h2-newsletter {
+    max-width: 99%;
+    margin: auto;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .95rem;
+    text-align: center;
+    color: white; 
+    word-spacing: 1.5;
+    line-height: 1.5;  
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+
+}
+
+.subscribe {
+    background-color: red;
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+}
+
+/* END OF FORM SECTION */
+
+
+
+/* START OF FOOTER */
+
+
+
+.footer {
+    background-color: black;
+}
+
+li {
+    height:20px;
+}
+
+.copyright {
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    color: white;   
+    font-size: .9rem; 
+    padding-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+.social-box {
+    background-color: black;
+}
+
+.social-list {
+    list-style: none;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+
+.fab {
+    padding-right: 10px;
+}
+
+  .address {
+    color: grey;
+  }
+
+
+    a.emaillink:link { color: white; }
+
+    a.emaillink:visited { color: white; }
+
+    a.emaillink:hover { color: white; }
+
+
+/* END OF FOOTER */
+
+/*-------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------*/
+
+/* MOBILE FIRST CODE - IGNORE UNTIL YOU SET THE SITE AS MOBILE 1ST
+
+MOBILE = LESS THAN 600PX (default) | TABLET = 600PX PLUS | DESKTOP = 1240PX AND UP
+.......SO SET UP WEBSITE AS "MOBILE 1ST" AND THEN GO BELOW AND SET IT UP FOR 600-1240 AND 1240+ */
+
+/* Media for Phone break-point 600px and up */
+
+/*
+@media screen and (min-width: 600px) {
+   
+
+    .mainlogo {
+    order: 1;
+    }
+    
+    .top-navigation {
+    order: 3;
+    display: flex;
+    flex-wrap: nowrap;
+    }
+    
+    .shoppingcart {
+    order: 2;
+    }
+    
+    
+    }
+    
+    
+    
+    @media screen and (min-width: 1240px) {
+    
+* { box-sizing: border-box;
+    border: .5px dashed grey;
+}
+
+
+/* START OF TOP WHITE HEADER SECTION 
+
+.topbanner {
+    display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center; 
@@ -19,8 +431,7 @@
 
 .mainlogo {
 background-image: url(images/aloha-logo.svg);
-/* QUESTION - not sure how to do an alt image name on CSS, 
-could not find online */
+
 background-size: contain;
 background-repeat: no-repeat;
 width: 20%;
@@ -37,9 +448,7 @@ height: auto;
 margin: auto;
 flex-direction: row;
 text-transform: uppercase;
-justify-content: space-around;
-align-items: center;
-align-content: center;
+text-align: center;
 }
 
 .listcontainer {
@@ -69,7 +478,7 @@ margin: auto;
 /* END OF TOP WHITE HEADER SECTION */
 
 
-/* START OF FLOWER-BANNER SECTION */
+/* START OF FLOWER-BANNER SECTION 
 
 .flower-banner {
     background-image: url(images/banner-girl.png), 
@@ -109,7 +518,7 @@ margin: auto;
 /* END OF FLOWER-BANNER SECTION */
 
 
-/* START OF HAND-CRAFTED STYLES SECTION */
+/* START OF HAND-CRAFTED STYLES SECTION 
 
 .about-us-promo {
     background: white;
@@ -156,11 +565,11 @@ margin: auto;
 /* END OF HAND-CRAFTED STYLES SECTION */
 
 
-/* START OF CATEGORIES SECTION */
+/* START OF CATEGORIES SECTION 
 
 
 
-.categories { /*UL the flex CONTAINER*/
+.categories { 
 display: flex;
 flex-wrap: wrap;
 list-style: none;
@@ -239,7 +648,7 @@ width: 50%;
 
 /* END OF CATEGORES SECTION */
 
-/* START OF FORM SECTION*/
+/* START OF FORM SECTION
 
 .signup-form {
     display: inline-block;
@@ -302,7 +711,7 @@ width: 50%;
 
 
 
-/* START OF FOOTER */
+/* START OF FOOTER 
 
 
 
@@ -359,54 +768,7 @@ li {
     a.emaillink:hover { color: white; }
 
 
-/* END OF FOOTER */
-
-
-
-/* MOBILE FIRST CODE - IGNORE UNTIL YOU SET THE SITE AS MOBILE 1ST
-
-MOBILE = LESS THAN 600PX (default) | TABLET = 600PX PLUS | DESKTOP = 1240PX AND UP
-.......SO SET UP WEBSITE AS "MOBILE 1ST" AND THEN GO BELOW AND SET IT UP FOR 600-1240 AND 1240+ */
-
-/* Media for Phone break-point 600px and up */
-
-/*
-@media screen and (min-width: 600px) {
-   
-
-    .mainlogo {
-    order: 1;
-    }
-    
-    .top-navigation {
-    order: 3;
-    display: flex;
-    flex-wrap: nowrap;
-    }
-    
-    .shoppingcart {
-    order: 2;
-    }
-    
-    
-    }
-    
-    
-    
-    @media screen and (min-width: 1240px) {
-    
-    
-        .mainlogo {
-            order: 1;
-        }
-        
-        .top-navigation{
-        order: 2;
-        }
-        
-        .shoppingcart {
-        order: 3;
-        }
+/* END OF FOOTER 
     
     
     }
