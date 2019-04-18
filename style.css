@@ -175,6 +175,7 @@ color: white;
     height: 200px; 
     background-position: top;
     margin: 3px;
+    color: white;
 }
 
 .categories :first-child {
