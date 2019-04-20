@@ -2,6 +2,17 @@
     border: .5px dashed grey;
 }
 
+img {
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  /* links need to be linked to the proper sections for this to work 
+        like #products (which denotes id in your html like <div id="products" for 
+        the div or section or class that is the products section) for example */
+
 
 /* START OF TOP WHITE HEADER SECTION */
 
@@ -11,6 +22,8 @@
     justify-content: space-between;
     align-items: center; 
     align-content: center;
+    border-bottom: .5px solid darkgrey;
+    padding-bottom: 5px;
 
 }
 
@@ -19,11 +32,11 @@ background-image: url(images/aloha-logo.svg);
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
-width: 20%;
+width: 30%;
 height: 60px;
 align-items: center;
 align-content: center;
-padding-left: 10px;
+margin-left: 10px;
 }
 
 .top-navigation  {
@@ -39,14 +52,16 @@ order: 3;
 .listcontainer {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nav-items {
     display: inline;
-    padding: 10px;
     font-family: PlayfairDisplay, Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     color: red;
+    font-size: 1rem;
 
 }
 
@@ -55,7 +70,7 @@ background-image: url(images/cart-icon.svg);
 background-size: contain;
 background-position: center;
 background-repeat: no-repeat;
-height: 60px;
+height: 45px;
 width: 20%;
 
 }
@@ -76,8 +91,7 @@ width: 20%;
     justify-content: center;
     align-content: center;
     align-items: center;
-    max-height: 600px;
-    height: 120vh;
+    height: 70vh;
 }
 
 .new-collection {
@@ -108,8 +122,6 @@ width: 20%;
 
 .about-us-promo {
     background: white;
-    height: 60vh;
-    width: 100%;
     margin: auto;
     padding: 2rem;
 }
@@ -154,48 +166,56 @@ width: 20%;
 /* START OF CATEGORIES SECTION */
 
 
-
 .categories { /*UL the flex CONTAINER*/
+font-family: Raleway, Arial, Helvetica, sans-serif;
 display: flex;
 flex-wrap: wrap;
 padding: 0;
 margin:auto;
 text-transform: uppercase;
 font-size: 1.5rem;
-color: white;
 }
 
+a {
+    text-decoration: none;
+}
 
 .categories li {
     display: flex;
     justify-content: center;
     align-items: center; 
     background-size: cover;  
-    width: 48%;
     height: 200px; 
     background-position: top;
-    margin: 3px;
-    color: white;
 }
 
 .categories :first-child {
     width: 100%;
+    color: white;
+    text-align: center;
+    
     }
 
 .categories :nth-child(2) {
-    width: 48%;
+    width: 50%;
+}
+/* make these 50% width, height as 50vw , as per Andrew's example 
+the Mens and Womens will be 100% width and 50vw */
+
+.categories :nth-child(3) {
+    width: 50%;
 }
 
 .categories :nth-child(3) {
-    width: 48%;
-}
-
-.categories :nth-child(3) {
-    width: 48%;
+    width: 50%;
 }
 
 .categories :nth-child(4) {
-    width: 48%;
+    width: 50%;
+}
+
+.categories :nth-child(5) {
+    width: 50%;
 }
 
 .categories :last-child {
@@ -252,15 +272,119 @@ color: white;
 
 /* END OF CATEGORES SECTION */
 
+.most-loved-products {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.most-loved {
+    color: black;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.loved-products {
+    color: black;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* START OF CAROUSEL */
+
+.carousel-cell {
+    width: 100%;
+    margin-right: 5px;
+    height: 400px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.garment-type {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    color: darkgray;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.garment-price {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    color: darkgray;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.carousel-cell h1 {
+    color: red;
+    text-decoration: none;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.carousel-cell img {
+    height: 50%;
+}
+
+.main-carousel {
+    padding-top: 25px;
+}
+
+.garment-para {
+    margin: auto;
+}
+
+.flickity-prev-next-button {
+    color: white;
+  }
+
+  .flickity-prev-next-button:hover {
+    color: grey;
+}
+
+/*
+@media (min-width: 600px; {      /* Jim had this up
+    .carousel-cell {
+        width: 25%;
+    }
+}
+*/
+/* END OF CAROUSEL */
+
+
 /* START OF FORM SECTION*/
 
+
+.h1-newsletter {
+    text-align: center;
+}
+
+.h2-newsletter {
+    max-width: 99%;
+    margin: auto;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .95rem;
+    text-align: center;
+    color: white; 
+    word-spacing: 1.5;
+    line-height: 2;  
+}
+
 .signup-form {
-    height: 250px;
+    height: 340px;
     background-image: url(images/wave-bkgd.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    padding-top: 25px;
-    margin: auto;
+    padding-top: 70px;
 
 }
 
@@ -285,47 +409,54 @@ color: white;
 
 }
 
-.h1-newsletter {
-    text-align: center;
-}
 
-.h2-newsletter {
-    max-width: 99%;
-    margin: auto;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: .95rem;
-    text-align: center;
-    color: white; 
-    word-spacing: 1.5;
-    line-height: 1.5;  
-}
 
 .form-box {
     display: flex;
     justify-content: center;
+    align-content: center;
     padding-top: 5px;
+    /*new*/
+    position: relative;
 
 }
 
+.sign-up-form {
+    width: 80%;
+    height: 2.5rem;
+    border-radius: 25px;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    padding-left: 20px;
+}
+
+
 .subscribe {
-    background-color: red;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-weight: 300;
+    font-size: .75rem;
+    position: absolute;
+    right: 50px;
+    background-color: #e2574c;
     color: white;
     height: 30px;
     border-radius: 20px;
+    top: 10px;
 }
+
 
 /* END OF FORM SECTION */
 
-
+}
 
 /* START OF FOOTER */
 
 
 
 .footer {
-    background-color: black;
+    background-color: #242424;
 }
 
 li {
@@ -339,11 +470,11 @@ li {
     padding-top: 20px;
     text-align: center;
     line-height: 1.5;
-
+    background-color: #242424;
 }
 
 .social-box {
-    background-color: black;
+    background-color: #242424;
 }
 
 .social-list {
@@ -354,7 +485,7 @@ li {
     display: flex;
     justify-content: center;
     margin: auto;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
 .fab {
@@ -372,8 +503,72 @@ li {
 
     a.emaillink:hover { color: white; }
 
+.flickity-page-dots {
+        position: absolute;
+        width: 100%;
+        bottom: 25px; 
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        line-height: 1;
+    }
+
+.flickity-page-dots .dot {
+    background: black;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: black;
+}
 
 /* END OF FOOTER */
+
+@media screen and (min-width: 600px){
+
+
+}
+
+/* APRIL 20TH - - START OF 1240px FLOWERBANNER
+
+.flower-banner {
+    background-image: url(images/banner-girl.png), 
+    url(images/flower-bkgd.jpg);
+    
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
+    background-position: center 50px, center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-height: 600px;
+    height: 120vh;
+}
+
+.new-collection {
+    text-transform: uppercase;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.spring-summer {
+    text-transform: capitalize;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    max-width: 300px;
+}
+*/
+
+/*------------------------------------------------------------------------------------*/
 
 /*-------------------------------------------------------
 ---------------------------------------------------------
