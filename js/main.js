@@ -3,9 +3,10 @@
 document.addEventListener("DOMContentLoaded", function() { 
     
     const flkty = new Flickity( '.main-carousel', {
-        cellAlign: 'center',
+        cellAlign: 'left',
         wrapAround: true,
-        freeScroll: true
+        freeScroll: true,
+        groupCells: true,  
       });
 
 }); //END OF DOCUMENT

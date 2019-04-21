@@ -1,5 +1,11 @@
+/*
 * { box-sizing: border-box;
     border: .5px dashed grey;
+}
+*/
+
+body {
+    box-sizing: border-box;
 }
 
 img {
@@ -19,11 +25,12 @@ html {
 .topbanner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; 
+    justify-content: space-around;
+    align-items: center;
     align-content: center;
     border-bottom: .5px solid darkgrey;
     padding-bottom: 5px;
+    margin: 0 auto;
 
 }
 
@@ -32,21 +39,25 @@ background-image: url(images/aloha-logo.svg);
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
-width: 30%;
+width: 110px;
 height: 60px;
 align-items: center;
 align-content: center;
 margin-left: 10px;
+padding-bottom: 10px;
+order: 1;
 }
 
 .top-navigation  {
 height: auto;
-margin: auto;
+margin: 0 auto;
 flex-direction: row;
 flex-wrap: nowrap;
 text-transform: uppercase;
 text-align: center;
 order: 3;
+width: 100%;
+border-top: .5px solid grey;
 }
 
 .listcontainer {
@@ -60,8 +71,10 @@ order: 3;
     display: inline;
     font-family: PlayfairDisplay, Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: red;
+    color: #e2574c;
     font-size: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
@@ -72,7 +85,7 @@ background-position: center;
 background-repeat: no-repeat;
 height: 45px;
 width: 20%;
-
+  order: 2;
 }
 
 /* END OF TOP WHITE HEADER SECTION */
@@ -171,7 +184,7 @@ font-family: Raleway, Arial, Helvetica, sans-serif;
 display: flex;
 flex-wrap: wrap;
 padding: 0;
-margin:auto;
+margin: 0 auto;
 text-transform: uppercase;
 font-size: 1.5rem;
 }
@@ -187,6 +200,8 @@ a {
     background-size: cover;  
     height: 200px; 
     background-position: top;
+    box-sizing: border-box;
+    border: 1px solid white;
 }
 
 .categories :first-child {
@@ -196,13 +211,10 @@ a {
     
     }
 
-.categories :nth-child(2) {
-    width: 50%;
-}
 /* make these 50% width, height as 50vw , as per Andrew's example 
 the Mens and Womens will be 100% width and 50vw */
 
-.categories :nth-child(3) {
+.categories :nth-child(2) {
     width: 50%;
 }
 
@@ -322,7 +334,7 @@ the Mens and Womens will be 100% width and 50vw */
 }
 
 .carousel-cell h1 {
-    color: red;
+    color: #e2574c;
     text-decoration: none;
     font-family: Playfair Display, Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -338,7 +350,7 @@ the Mens and Womens will be 100% width and 50vw */
 }
 
 .garment-para {
-    margin: auto;
+    margin: 0 auto;
 }
 
 .flickity-prev-next-button {
@@ -367,7 +379,7 @@ the Mens and Womens will be 100% width and 50vw */
 }
 
 .h2-newsletter {
-    max-width: 99%;
+    max-width: 600px;
     margin: auto;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -416,9 +428,9 @@ the Mens and Womens will be 100% width and 50vw */
     justify-content: center;
     align-content: center;
     padding-top: 5px;
-    /*new*/
     position: relative;
-
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .sign-up-form {
@@ -429,21 +441,22 @@ the Mens and Womens will be 100% width and 50vw */
     font-style: normal;
     font-weight: 100;
     padding-left: 20px;
+    max-width: 500px;
 }
 
 
 .subscribe {
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-style: bold;
     font-weight: 300;
     font-size: .75rem;
     position: absolute;
-    right: 50px;
+    right: 12%;
     background-color: #e2574c;
     color: white;
     height: 30px;
     border-radius: 20px;
     top: 10px;
+    width: 100px;
 }
 
 
@@ -471,6 +484,7 @@ li {
     text-align: center;
     line-height: 1.5;
     background-color: #242424;
+    margin: 0 auto;
 }
 
 .social-box {
@@ -481,11 +495,14 @@ li {
     list-style: none;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     color: white;
-    padding: 0;
     display: flex;
     justify-content: center;
     margin: auto;
     padding-bottom: 80px;
+  }
+
+  .social-text  {
+    font-size: 0;
   }
 
 .fab {
@@ -494,6 +511,8 @@ li {
 
   .address {
     color: grey;
+    margin: 0;
+    padding-bottom: 25px;
   }
 
 
@@ -526,82 +545,146 @@ li {
 
 @media screen and (min-width: 600px){
 
+    body {
+        max-width: 1240px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
 
-}
+    .top-navigation  {
+    border-top: .5px solid white;
+    }
 
-/* APRIL 20TH - - START OF 1240px FLOWERBANNER
-
-.flower-banner {
-    background-image: url(images/banner-girl.png), 
-    url(images/flower-bkgd.jpg);
+    .topbanner {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        border-bottom: .5px solid darkgrey;
+        padding-bottom: 5px;
     
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, cover;
-    background-position: center 50px, center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    max-height: 600px;
-    height: 120vh;
-}
-
-.new-collection {
-    text-transform: uppercase;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-}
-
-.spring-summer {
-    text-transform: capitalize;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 2.5rem;
-    color: white;
-    text-align: center;
-    max-width: 300px;
-}
-*/
-
-/*------------------------------------------------------------------------------------*/
-
-/*-------------------------------------------------------
----------------------------------------------------------
----------------------------------------------------------*/
-
-/* MOBILE FIRST CODE - IGNORE UNTIL YOU SET THE SITE AS MOBILE 1ST
-
-MOBILE = LESS THAN 600PX (default) | TABLET = 600PX PLUS | DESKTOP = 1240PX AND UP
-.......SO SET UP WEBSITE AS "MOBILE 1ST" AND THEN GO BELOW AND SET IT UP FOR 600-1240 AND 1240+ */
-
-/* Media for Phone break-point 600px and up */
-
-/*
-@media screen and (min-width: 600px) {
-   
-
+    }
+    
     .mainlogo {
+    background-image: url(images/aloha-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 110px;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    margin-left: 10px;
+    padding-bottom: 10px;
     order: 1;
     }
     
-    .top-navigation {
-    order: 3;
-    display: flex;
+    .top-navigation  {
+    height: auto;
+    margin: auto;
+    flex-direction: row;
     flex-wrap: nowrap;
-    }
-    
-    .shoppingcart {
+    text-transform: uppercase;
+    text-align: center;
     order: 2;
     }
     
+    .listcontainer {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .nav-items {
+        display: inline;
+        font-family: PlayfairDisplay, Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        color: #e2574c;
+        font-size: 1rem;
+        padding-left: 5px;
+        padding-right: 5px;
     
     }
     
+    .shoppingcart  {
+    background-image: url(images/cart-icon.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 20%;
+      order: 3;
+    }
+
+    .categories :first-child {
+        width: 50%;
+        }
+    .categories :last-child {
+        width: 50%;
+        }
+        .categories :nth-child(2) {
+            width: 25%;
+        }
+        
+        .categories :nth-child(3) {
+            width: 25%;
+        }
+        
+        .categories :nth-child(4) {
+            width: 25%;
+        }
+        
+        .categories :nth-child(5) {
+            width: 25%;
+        }
+
+        .carousel-cell {
+            width: 25%;
+        }
+
+        .main-carousel {
+            padding-top: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .social-text  {
+            font-size: .75rem;
+          }
+
+          .footer {
+            background-color: #242424;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 150px;
+        }
+        
+        .copyright {
+            font-family: Playfair Display, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            color: white;   
+            font-size: .75rem; 
+            margin: 0;
+        }
+        
+        .social-list {
+            list-style: none;
+            font-family: Raleway, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: italic;
+            color: white;
+            padding: 0;
+            font-size: .75rem;
+            width: 75px;
+          }
+
+}
+
+
     
     
     @media screen and (min-width: 1240px) {
@@ -611,160 +694,8 @@ MOBILE = LESS THAN 600PX (default) | TABLET = 600PX PLUS | DESKTOP = 1240PX AND 
 }
 
 
-/* START OF TOP WHITE HEADER SECTION 
-
-.topbanner {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center; 
-    align-content: center;
-    height: 100px;
-    max-width: 1240px;
-    margin: auto;
-
-}
-
-.mainlogo {
-background-image: url(images/aloha-logo.svg);
-
-background-size: contain;
-background-repeat: no-repeat;
-width: 20%;
-height: 60px;
-margin: left 10px;
-align-items: center;
-align-content: center;
-padding-left: 10px;
-}
-
-.top-navigation  {
-width: 50%;
-height: auto;
-margin: auto;
-flex-direction: row;
-text-transform: uppercase;
-text-align: center;
-}
-
-.listcontainer {
-    list-style: none;
-    padding: 0;
-}
-
-.nav-items {
-    display: inline;
-    padding: 10px;
-    font-family: PlayfairDisplay, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    color: red;
-
-}
-
-.shoppingcart  {
-background-image: url(images/cart-icon.svg);
-background-size: contain;
-background-position: center;
-background-repeat: no-repeat;
-height: 60px;
-width: 20%;
-margin: auto;
-}
-
-/* END OF TOP WHITE HEADER SECTION */
-
-
-/* START OF FLOWER-BANNER SECTION 
-
-.flower-banner {
-    background-image: url(images/banner-girl.png), 
-    url(images/flower-bkgd.jpg);
-    
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, cover;
-    background-position: center 50px, center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    max-height: 600px;
-    height: 60vh;
-}
-
-.new-collection {
-    text-transform: uppercase;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-}
-
-.spring-summer {
-    text-transform: capitalize;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 2.5rem;
-    color: white;
-    text-align: center;
-}
-
-/* END OF FLOWER-BANNER SECTION */
-
-
-/* START OF HAND-CRAFTED STYLES SECTION 
-
-.about-us-promo {
-    background: white;
-    height: 150px;
-    width: 700px;
-    margin: auto;
-    padding: 1rem;
-
-}
-
-.h1 {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-.hand-crafted {
-    color: black;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-style: italic;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.styles {
-    color: black;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-style: bold;
-    font-weight: 500;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.h2 {
-    color: black;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1rem;
-    text-align: center;
-}
-
-/* END OF HAND-CRAFTED STYLES SECTION */
-
 
 /* START OF CATEGORIES SECTION 
-
-
-
 .categories { 
 display: flex;
 flex-wrap: wrap;
@@ -776,8 +707,6 @@ font-size: 1.5rem;
 color: white;
 max-width: 1240px;
 }
-
-
 .categories li {
     display: flex;
     justify-content: center;
@@ -787,65 +716,47 @@ max-width: 1240px;
     height: 200px; 
     background-position: top;
 }
-
 .categories :first-child {
 width: 50%;
 }
 .categories :last-child {
     width: 50%;
 }
-
 .mens {
     background-image: url(images/mens-category.jpg);
     width: 350px;
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;   
-
 }
-
 .trends {
     background-image: url(images/trends-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
-
 .glasses {
     background-image: url(images/glasses-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-
-
 .sale {
     background-image: url(images/sale-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-
 .bags {
     background-image: url(images/bags-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-
 .womens {
     background-image: url(images/womens-category.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-
-
 /* END OF CATEGORES SECTION */
 
 /* START OF FORM SECTION
-
 .signup-form {
     display: inline-block;
     justify-content: center;
@@ -858,9 +769,7 @@ width: 50%;
     padding-top: 25px;
     padding-bottom: 25px;
     margin: auto;
-
 }
-
 .signup-form .signup {
     color: white;
     font-family: Playfair Display, Arial, Helvetica, sans-serif;
@@ -870,7 +779,6 @@ width: 50%;
     text-align: center;
     margin: auto;
 }
-
 .signup-form .updates {
     color: white;
     font-family: Playfair Display, Arial, Helvetica, sans-serif;
@@ -879,13 +787,10 @@ width: 50%;
     font-size: 3rem;
     text-align: center;
     margin: auto;
-
 }
-
 .h1-newsletter {
     text-align: center;
 }
-
 .h2-newsletter {
     max-width: 75%;
     margin: auto;
@@ -895,22 +800,16 @@ width: 50%;
     font-size: 1rem;
     text-align: center;
 }
-
 .form-box {
     display: flex;
     justify-content: center;
     padding-top: 5px;
-
 }
-
 /* END OF FORM SECTION */
 
 
 
 /* START OF FOOTER 
-
-
-
 .footer {
     background-color: black;
     width: 100%;
@@ -922,11 +821,9 @@ width: 50%;
     padding-left: 40px;
     padding-right: 40px;
 }
-
 li {
     height:20px;
 }
-
 .copyright {
     font-family: Playfair Display, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -935,7 +832,6 @@ li {
     font-size: .75rem; 
     padding-top: 20px;
 }
-
 .social-list {
     list-style: none;
     font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -947,23 +843,15 @@ li {
     font-size: .75rem;
     width: 100px;
   }
-
 .fab {
     padding-right: 10px;
 }
-
   .address {
     color: grey;
   }
-
-
     a.emaillink:link { color: white; }
-
     a.emaillink:visited { color: white; }
-
     a.emaillink:hover { color: white; }
-
-
 /* END OF FOOTER 
     
     
