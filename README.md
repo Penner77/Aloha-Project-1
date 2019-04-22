@@ -7,6 +7,31 @@ The Aloha Apparel static webpage was a first foray into the world of HTML, CSS a
 
 HTML, CSS, JavaScript, Flickity, Git/GitHub, Terminal (Mac), non-stop coffee and elbow grease were all used in the creation of this website. Ensuring the languages, code and plug-ins worked well together was a struggle but a true learning experience. 
 
+Aspects used to create this website:
+HTML
+CSS 
+Flickity 
+Git/GitHub
+Terminal 
+Elements and attributes
+Doctypes, meta tags and comments
+Structure of a webpage knowledge
+Form elements
+The box model
+Classes and IDs
+Color and backgrounds
+CSS "reset" 
+Icon Fonts
+Developer tools
+Responsive Web Design
+Mobile-first
+CSS3 properties
+Flexbox
+JavaScript
+Operators and Control Flow
+Functions
+
+
 ## Personal Learning Curve
 
 Learning HTML, CSS and JavaScript while making this website in real-time was an adventure! The basic templates of the design were difficult to get set up, let alone modifying them with unique identifiers that are custom to each scripting language. Sometimes a fix is as simple as a missing semi-colon, but most often it was just the real struggle of understanding how one data entry impacts the entire layout. 

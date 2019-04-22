@@ -26,10 +26,10 @@ function validation(){
     const email = document.getElementById("emailForm").value;
     const emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
     if ( email ==='') {
-    alert("Please fill all fields...!!!!!!");
+    alert("Please fill all fields...!");
     return false;
     } else if (!(email).match(emailReg)) {
-    alert("Invalid Email...!!!!!!");
+    alert("Invalid Email...!");
     return false;
     } else {
     return true;
