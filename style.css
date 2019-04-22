@@ -1,8 +1,4 @@
-
-/** { box-sizing: border-box;
-    border: .5px dashed grey;
-}
-*/
+/* GENERAL SETTINGS */
 
 body {
     box-sizing: border-box;
@@ -17,10 +13,10 @@ a:hover {
 a {
     color: #e2574c;
 }
-/*
+
 a:visited {
     color: #471111;
-}*/
+}
 
 img {
     max-width: 100%;
@@ -29,10 +25,6 @@ img {
 html {
     scroll-behavior: smooth;
   }
-  /* links need to be linked to the proper sections for this to work 
-        like #products (which denotes id in your html like <div id="products" for 
-        the div or section or class that is the products section) for example */
-
 
 /* START OF TOP WHITE HEADER SECTION */
 
@@ -192,7 +184,7 @@ width: 20%;
 /* START OF CATEGORIES SECTION */
 
 
-.categories { /*UL the flex CONTAINER*/
+.categories { 
 font-family: Raleway, Arial, Helvetica, sans-serif;
 display: flex;
 flex-wrap: wrap;
@@ -224,8 +216,6 @@ a {
     
     }
 
-/* make these 50% width, height as 50vw , as per Andrew's example 
-the Mens and Womens will be 100% width and 50vw */
 
 .categories :nth-child(2) {
     width: 50%;
@@ -324,7 +314,6 @@ the Mens and Womens will be 100% width and 50vw */
 .carousel-cell {
     width: 100%;
     margin-right: 5px;
-    height: 400px;
     display: block;
     align-items: center;
     justify-content: center;
@@ -350,16 +339,17 @@ the Mens and Womens will be 100% width and 50vw */
     color: #e2574c;
     text-decoration: none;
     font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 100;
 }
 
 .carousel-cell img {
-    height: 50%;
+width: 50%;
 }
 
 .main-carousel {
     padding-top: 25px;
+    height: 49vh;
 }
 
 .garment-para {
@@ -374,13 +364,6 @@ the Mens and Womens will be 100% width and 50vw */
     color: #969696;
 }
 
-/*
-@media (min-width: 600px; {      /* Jim had this up
-    .carousel-cell {
-        width: 25%;
-    }
-}
-*/
 /* END OF CAROUSEL */
 
 
@@ -448,7 +431,7 @@ the Mens and Womens will be 100% width and 50vw */
 
 .sign-up-form {
     width: 80%;
-    height: 2.5rem;
+    height: 2.25rem;
     border-radius: 25px;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -536,14 +519,8 @@ li {
     a.emaillink:hover { color: white; }
 
 .flickity-page-dots {
-        position: absolute;
         width: 100%;
         bottom: 25px; 
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        text-align: center;
-        line-height: 1;
     }
 
 .flickity-page-dots .dot {
@@ -694,7 +671,7 @@ li {
             font-style: normal;
             font-weight: italic;
             color: white;
-            padding-top: 20px;
+            padding-top: 25px;
             font-size: .75rem;
             width: 175px;
           }
@@ -707,176 +684,9 @@ li {
 }
 
 
-    
-    
     @media screen and (min-width: 1240px) {
     
 * { box-sizing: border-box;
-    border: .5px dashed #969696;
+    max-width: 1240px;
+    margin: 0 auto;
 }
-
-
-
-/* START OF CATEGORIES SECTION 
-.categories { 
-display: flex;
-flex-wrap: wrap;
-list-style: none;
-padding: 0;
-margin:auto;
-text-transform: uppercase;
-font-size: 1.5rem;
-color: white;
-max-width: 1240px;
-}
-.categories li {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    background-size: cover;  
-    width: 25%;
-    height: 200px; 
-    background-position: top;
-}
-.categories :first-child {
-width: 50%;
-}
-.categories :last-child {
-    width: 50%;
-}
-.mens {
-    background-image: url(images/mens-category.jpg);
-    width: 350px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;   
-}
-.trends {
-    background-image: url(images/trends-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.glasses {
-    background-image: url(images/glasses-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.sale {
-    background-image: url(images/sale-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.bags {
-    background-image: url(images/bags-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.womens {
-    background-image: url(images/womens-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* END OF CATEGORES SECTION */
-
-/* START OF FORM SECTION
-.signup-form {
-    display: inline-block;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 200px;
-    background-image: url(images/wave-bkgd.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin: auto;
-}
-.signup-form .signup {
-    color: white;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-style: italic;
-    font-size: 3rem;
-    text-align: center;
-    margin: auto;
-}
-.signup-form .updates {
-    color: white;
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-style: bold;
-    font-weight: 500;
-    font-size: 3rem;
-    text-align: center;
-    margin: auto;
-}
-.h1-newsletter {
-    text-align: center;
-}
-.h2-newsletter {
-    max-width: 75%;
-    margin: auto;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1rem;
-    text-align: center;
-}
-.form-box {
-    display: flex;
-    justify-content: center;
-    padding-top: 5px;
-}
-/* END OF FORM SECTION */
-
-
-
-/* START OF FOOTER 
-.footer {
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    height: 150px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-li {
-    height:20px;
-}
-.copyright {
-    font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    color: white;   
-    font-size: .75rem; 
-    padding-top: 20px;
-}
-.social-list {
-    list-style: none;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: italic;
-    color: white;
-    padding: 0;
-    padding-top: 10px;
-    font-size: .75rem;
-    width: 100px;
-  }
-.fab {
-    padding-right: 10px;
-}
-  .address {
-    color: grey;
-  }
-    a.emaillink:link { color: white; }
-    a.emaillink:visited { color: white; }
-    a.emaillink:hover { color: white; }
-/* END OF FOOTER 
-    
-    
-    }
-    
-*/
