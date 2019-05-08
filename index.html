@@ -4,7 +4,7 @@
     <title>Aloha Apparel</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- the above code is what helps make @media queries work -->
+    <!-- the above code is what helps make @media queries work and also good for vision impaired users -->
     <meta name="description" content="Jeff Penner's first Project">
     <meta name="author" content="RED Academy HTML Project 1 for Jeff Penner">
     <link rel="stylesheet" href="reset.css">
@@ -17,7 +17,7 @@
 
 </head>
 <body>
-
+    <a class="screen-reader-text" href="#main">Skip to content</a>
 
 
 <!-- START OF TOP HEADER BANNER -->
@@ -45,7 +45,7 @@
 
 <!-- END OF TOP HEADER BANNER -->
 
-<main>
+<main id="main" class="site-main" tabindex="-1">
 
 <!-- START OF FLOWER BANNER SECTION -->
 
@@ -195,5 +195,7 @@
 </main>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js"></script>
+<script src="tota11y.min.js"></script>
 </body>
 </html>
