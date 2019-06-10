@@ -2,7 +2,7 @@
 
 The Aloha Apparel static webpage was a first foray into the world of HTML, CSS and JavaScript. Given a mock-up of the site at varying sizes, I was tasked with creating a "mobile first" and "responsive" website sizing from mobile to desktop (with a max width of 1240px).
 
-<img src="images/git-aloha-flower-banner.png" width="750">
+<img src="images/git-aloha-flower-banner.png" width="750px">
 
 ## Technical Elements
 
@@ -35,6 +35,8 @@ Functions
 ## Personal Learning Curve
 
 Learning HTML, CSS and JavaScript while making this website in real-time was an adventure! The basic templates of the design were difficult to get set up, let alone modifying them with unique identifiers that are custom to each scripting language. Sometimes a fix is as simple as a missing semi-colon, but most often it was just the real struggle of understanding how one data entry impacts the entire layout.
+
+<img src="images/git-carousel" width="750px">
 
 ## Hanging Thoughts ### aka still-to-do-list
 
